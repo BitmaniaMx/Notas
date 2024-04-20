@@ -105,10 +105,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="qHz-c4-yXC">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="eMP-x8-Bjr"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="O8u-Hq-5vi"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="O8u-Hq-5vi">
+                            <connections>
+                                <segue destination="GK3-nz-Xa4" kind="unwind" unwindAction="unwindToNotesViewController:" id="Gj6-g1-dIG"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5u4-SS-Wet" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="GK3-nz-Xa4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3991.6030534351144" y="26.760563380281692"/>
         </scene>
